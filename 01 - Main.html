@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test: Formatting</title>
+
+
+<link rel="stylesheet" type="text/css" href="style-3.css">
+<!-- Bootstrap link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="#">About Us</a>
+        <a href="#">Trends</a>
+        <a href="#">Contact Us</a>
+      </div>
+<!-- Start Menu Button Creation -->
+      <div class="container" onclick="myFunction(this)" id="myDropdown">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>  
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+      </div>
+
+      </div>
+      
+      <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+
+<!-- Stop Menu Button Creation -->
+      <!-- Start Dropdown Menu Creation  -->
+
+                    <div class="dropdown" >
+                      <!-- <button onclick="myFunction()" class="dropbtn"></button> -->
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                      </div> -->
+                    </div>
+                    <script>
+                      /* When the user clicks on the button, 
+                      toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      
+                      // Close the dropdown if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }
+                      </script>
+
+                    <!-- Stop Dropdown Menu Creation  -->
+
+
+
+<div class="header">
+  <h1>Weather Resource Page</h1>
+  <p>Learn about trends in your dream locaitons so that you can have the experience of a lifetime</p>
+</div>
+
+
+
+<div class="row">
+  <div class="column side">
+    <h2>Quick Links</h2>
+    <p>Click on an image below to see what weather is like during your prjected trip date.</p>
+
+    <ul>
+        <li> <a href="01 - Main.html">Main </a> </li>
+        <li> <a href="02 - Prelude.html">Prelude </a> </li>
+        <li> <a href="05 - Wind Speed.html">Wind</a> </li>
+        <li> <a href="03 - Cloudiness.html">Cloudiness </a> </li>
+        <li> <a href="04 - Humidity.html">Humidity </a> </li>
+        <li> <a href="06 - Temperature.html">Temperature </a> </li>
+        <li> <a href="07 - Other Comparisons.html">Other Comparisons </a> </li>
+        <li> <a href="08 - Data.html">Data </a> </li>
+        <li> <a href="09 - Reference.html">Reference </a> </li>
+    </ul>
+
+
+
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>We are a team of amature meterologist that want to help you plan your trip so that you can be the hero your family deserves. Our team created this page after all of us determined there was a need for families all over the world to understand the different types of weather trends at the locations we planned for our vacation.</p>
+    <p>Feel free to use our resouces to plan your trip just remeber to leave a comment on how our site helped you plan your trip or leave a comment on how we can improve the information we are providing. There never is one right answer but that is not an excuse for not providing complete information to all of our customers and their families.</p>
+
+    <p>Here are some ideas to update the webpage:</p>
+        <ul>
+            <li> <a href="https://www.w3schools.com/howto/howto_css_parallax.asp">Parallax scrolling </a> </li>
+            <li> <a href="https://www.w3schools.com/howto/howto_css_flip_box.asp">Flip Box for the type of weather and results onthe other side </a> </li>
+            <li> <a href="https://www.w3schools.com/css/css3_images.asp">Modifying Images </a> </li>
+            <li> <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog">Blog Layout </a> </li>
+        </ul>
+  </div>
+  
+
+  <div class="flip-box" >
+    <a href="05 - Wind Speed.html">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Wind</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Wind</h2>
+              
+                <img src="Latitude_01_vs_Cloud_Plot_3_28_2021.png"
+                  width=70%
+                  height=70%
+                >
+            
+            </div>
+          </div>
+    </a>         
+            
+  </div>
+
+
+  <div class="flip-box">
+    <a href="03 - Cloudiness.html">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Cloudiness</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Cloudiness</h2>
+              
+                <img src="Latitude_01_vs_Cloud_Plot_3_28_2021.png"
+                  width=70%
+                  height=70%
+                >
+            
+            </div>
+          </div>
+    </a>         
+            
+  </div>
+
+
+
+  <div class="flip-box">
+    <a href="04 - Humidity.html">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Humidity</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Humidity</h2>
+              
+                <img src="Latitude_01_vs_Cloud_Plot_3_28_2021.png"
+                  width=70%
+                  height=70%
+                >
+            
+            </div>
+          </div>
+    </a>         
+            
+  </div>
+
+
+  <div class="flip-box" class="center">
+    <a href="06 - Temperature.html">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Temperature</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Temperature</h2>
+              
+                <img src="Latitude_01_vs_Cloud_Plot_3_28_2021.png"
+                  width=70%
+                  height=70%
+                >
+            
+            </div>
+          </div>
+    </a>         
+            
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="column side">
+  </div> -->
+</div>
+
+</div>
+
+<div class="footer">
+    <a href="#">About Us</a>
+    <a href="#">Trends</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  
+</body>
+</html>
